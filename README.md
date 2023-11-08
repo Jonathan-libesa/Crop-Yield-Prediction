@@ -23,4 +23,12 @@ hg/ha_yield: The average crop production yield is 77053.3. Ranging from 50 all t
 
 
 Step 4 | EDA
+inferences:
+rainfall: Most rainfall is between 0-1000 and very few is around 3000
+pesticides_tonnes: The majority of used pesticides is little to zero
+avg_temp: Most average temperatures is around 25. *hg/ha yield: There is a vast majority of yield production around 0.
 
+
+
+
+![crop](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/1dbb93f5-c2b4-44fe-9ee6-834d4cdfd0fe)
