@@ -32,3 +32,22 @@ avg_temp: Most average temperatures is around 25. *hg/ha yield: There is a vast 
 
 
 ![crop](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/1dbb93f5-c2b4-44fe-9ee6-834d4cdfd0fe)
+
+
+
+
+
+Inferences:
+Group 0: Australia produced the largest amount of yield harvesting potatoes while Angola has the least yield harvesting sorghum,soybeans and maize.
+Group 1: Egypt was producing most yield in this group growing sweet potatoes and potatoes while Ecuador was struggling in harvesting wheat.
+Group 2: France and Germany are at the top of yield production both harvesting potatoes while Honduras wasn't in luck harvesting wheat
+Group 3: India soared in growing Cassava and Japan was at the top growing potatoes while Madagascar struggled to grow soybeans and sorghum.
+Group 4: Morocco and Mexico shined in yield production of potatoes while Niger failed to have high productions of wheat
+Group 5: Pakistan was struggling in growing sorghum while South Africa Spain, and Saudi Arabia shined in growing Potatoes
+Group 6: Tajikistan failed to harvest large amounts of soybeans while United Kingdom and Turkey produced a myriad of potatoes Collectively:
+Top producing countries: United Kingdom, France, Germany, Australia, and Japan
+Top produced Item: potatoes
+Least producing countries: Zimbabwe, Azerbaijan, Angola, Niger, Tajikistan
+Least produced item: sorghum and soybeans
+![image](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/8bc4e970-0ec3-4c25-96d5-fe6932a73419)
+
