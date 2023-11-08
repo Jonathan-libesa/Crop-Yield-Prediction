@@ -52,3 +52,27 @@ Least produced item: sorghum and soybeans
 
 ![rain](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/a7b607d6-015e-4b6d-89eb-06f02d0ffeaf)
 
+
+
+
+Inferences:
+Top rainfall coun![rain 2]
+tries: Bangladesh, Colombia, Guyana, Indonesia, Nicaragua, Papua New Guinea, Ecuador, and Suriname have rainfall with over 2000 mm
+Least rainfall countries: Saudi Arabia, Pakistan, South Africa, Mali, Mauritania, Morocco, Niger, Libya, Iraq, Egypt, Azerbaijan,and Algeria have rainfall with less than 500 mm
+![rain1](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/cc70ab76-f8ca-4894-ae3d-d29b3fbcc385)
+
+
+
+![rain ![rain 3](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/f924d4ee-fa6a-4036-baf2-56098cdbbbba)
+2](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/62dec65b-e9c0-42ff-8c45-b55479ebc2e1)
+
+
+![rain 4](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/e8503a1b-4332-4c4f-b928-5048c2942663)
+![rain 5](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/33fceb56-1f0e-4b13-8853-554a64c3142b)
+
+![rain 6](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/abd222a2-1632-406c-9291-196e9cc96d97)
+
+![rain 7](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/542611b5-caaf-4d14-8df8-5d040b50fd1f)
+
+
+
