@@ -14,11 +14,16 @@ from sklearn.model_selection import KFold
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import BaggingRegressor
-from sklearn.metrics import mean_absolute_error,r2_score
+from IPython.display import display
+import numpy as np
+
+
+
 class colorss:
     yellows=['#ffffd4','#fee391','#fec44f','#fe9929','#d95f0e','#993404','#a70000','#ff5252','#ff7b7b','#ffbaba']
     greens=['#ffffd4','#fee391','#fec44f','#fe9929','#d9f0a3','#addd8e','#78c679','#41ab5d','#238443','#005a32']
 cmaps=['flare','icefire','bwr_r','Accent','Spectral','RdGy','afmhot_r','afmhot','inferno','seismic','vlag','vlag_r']
+
 # Read the dataset into a pandas DataFrame
 yield_data = pd.read_csv( r"C:\Users\cash\Documents\SEMSTER 4.1 NOTES\yield.csv")
 temp_data = pd.read_csv( r"C:\Users\cash\Documents\SEMSTER 4.1 NOTES\temp.csv")
@@ -131,7 +136,98 @@ sns.scatterplot(x = 'Item', y = 'avg_temp', data = df,size=10,color='y')
 plt.xticks(rotation=90);
 
 
-col = ['Year', 'average_rain_fall_mm_per_year','Pesticies Value', 'Avg_Temp', 'Area', 'Item', 'Yield Value']
-df = df[col]
-X = df.iloc[:, :-1]
-y = df.iloc[:, -1]
+
+
+
+
+
+
+datacorr=df.copy()
+datacorr.drop(['Area','Item'],axis = 1 , inplace = True)
+
+
+
+
+
+X, Y = datacorr.drop(labels='hg/ha_yield', axis=1), datacorr['hg/ha_yield']
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
+
+
+results = []
+
+models = [
+    ('Linear Regression', LinearRegression()),
+    ('Random Forest', RandomForestRegressor(random_state=42)),
+    ('Gradient Boost', GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=3,random_state=42)),
+    ('XGBoost', XGBRegressor(random_state=42)),
+    ('KNN',KNeighborsRegressor(n_neighbors=5)),
+    ('Decision Tree',DecisionTreeRegressor(random_state=42)),
+    ('Bagging Regressor',BaggingRegressor(n_estimators=150, random_state=42))
+      ]
+for name, model in models:
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    accuracy = model.score(X_test, y_test)
+    MSE = mean_squared_error(y_test, y_pred)
+    R2_score = r2_score(y_test, y_pred)
+    results.append((name, accuracy, MSE, R2_score))
+    acc = (model.score(X_train , y_train)*100)
+    print(f'The accuracy of the {name} Model Train is {acc:.2f}')
+    acc =(model.score(X_test , y_test)*100)
+    print(f'The accuracy of the  {name} Model Test is {acc:.2f}')    
+    plt.scatter(y_test, y_pred,s=10,color='#9B673C')
+    plt.xlabel('Actual Values')
+    plt.ylabel('Predicted Values')
+#     plt.title(f' {name} Evaluation')
+    plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='green', linewidth = 4)
+    plt.show()
+
+dff = pd.DataFrame(results, columns=['Model', 'Accuracy', 'MSE', 'R2_score'])
+df_styled_best = dff.style.highlight_max(subset=['Accuracy','R2_score'], color='green').highlight_min(subset=['MSE'], color='green').highlight_max(subset=['MSE'], color='red').highlight_min(subset=['Accuracy','R2_score'], color='red')
+
+# df_styled_worst = dff.style.highlight_max(subset=['MSE'], color='red').highlight_min(subset=['Accuracy','R2_score'], color='red')
+
+display(df_styled_best)
+# display(df_styled_worst)
+
+
+results = []
+
+models = [
+    ('Linear Regression', LinearRegression()),
+    ('Random Forest', RandomForestRegressor(random_state=42)),
+    ('Gradient Boost', GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=3,random_state=42)),
+    ('XGBoost', XGBRegressor(random_state=42)),
+    ('KNN',KNeighborsRegressor(n_neighbors=5)),
+    ('Decision Tree',DecisionTreeRegressor(random_state=42)),
+    ('Bagging Regressor',BaggingRegressor(n_estimators=150, random_state=42))
+          ]
+
+for name, model in models:
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    accuracy = model.score(X_test, y_test)
+    MSE = mean_squared_error(y_test, y_pred)
+    MAE = mean_absolute_error(y_test, y_pred)
+    MAPE = mean_absolute_percentage_error(y_test, y_pred)
+    R2_score = r2_score(y_test, y_pred)
+    results.append((name, accuracy, MAE,MSE, MAPE, R2_score))
+    
+    print(name)
+    num_folds = 5
+    kf = KFold(n_splits=num_folds, shuffle=True)
+    scores = cross_val_score(model, X, Y, cv=kf)
+
+    for fold, score in enumerate(scores):
+        print(f"Fold {fold+1}: {score}")
+
+    mean_score = np.mean(scores)
+    print(f"Mean Score: {mean_score}")
+    print('-'*30)
+
+
+
+df = pd.DataFrame(results, columns=['Model', 'Accuracy', 'MAE','MSE', 'MAPE', 'R2_score'])
+df_styled_best = df.style.highlight_max(subset=['Accuracy','R2_score'], color='blue').highlight_min(subset=['MSE','MAE','MAPE'], color='lightblue').highlight_max(subset=['MSE','MAE','MAPE'], color='red').highlight_min(subset=['Accuracy','R2_score'], color='red')
+
+display(df_styled_best)
