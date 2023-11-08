@@ -49,5 +49,6 @@ Top producing countries: United Kingdom, France, Germany, Australia, and Japan
 Top produced Item: potatoes
 Least producing countries: Zimbabwe, Azerbaijan, Angola, Niger, Tajikistan
 Least produced item: sorghum and soybeans
-![image](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/8bc4e970-0ec3-4c25-96d5-fe6932a73419)
+
+![rain](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/a7b607d6-015e-4b6d-89eb-06f02d0ffeaf)
 
