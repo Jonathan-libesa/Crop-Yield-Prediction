@@ -75,4 +75,28 @@ Least rainfall countries: Saudi Arabia, Pakistan, South Africa, Mali, Mauritania
 ![rain 7](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/542611b5-caaf-4d14-8df8-5d040b50fd1f)
 
 
+Top pesticides using countries: Brazil, Italy, Argentina
 
+France: For a high yield producing country, using over 80000 tonnes of pesticides could be harmful.
+
+Japan: Another high producing country using over 60000 tonnes of pesticides.
+
+Least pesticides using countries: Algeria, Angola, Azerbaijan, Bulgaria, Burkina Faso, Burundi, Cameroon, Cenrral African Republic, Croatia, Egypt, El Salvador,Greece, Guinea, Guyana, Haiti, Honduras, Hungary, Indonesia, Iraq, Jamaica, Kenya, Kazakhstan, Libya, Madagascar, Malawi, Mali, Mauritana, Mauritius, Mozambique, Nepal, Niger, Papua New Guinea, Rwanda, Senegal, Saudi Arabia, Sri Lanka, Suriname, Tajikistan, Uganda, Zambia, Zimbabwe, Uruguay have been using pesticides with less than 10000 tonnes
+
+All poorly producing yield countries are included in least pesticides usage countries
+
+Germany, Australia, and United Kingdom are top producing countries and they use an average amount of pesticides around 30000 tonnes
+![yield](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/968ec29b-69df-4061-ae06-56119cb90d23)
+
+
+
+![yield 1](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/6795d54d-ab0b-4a79-b0de-c9e47a445df2)
+
+![yield![yield 3](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/dd365509-d48d-43c9-86a5-bc37550d1703)
+ 2](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/8bd82bd5-a10f-4c27-961e-85d319c512fe)   
+
+![yield 4](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/e48fa59c-a80a-4a61-abd7-0c87eb26ce66)
+
+ 
+![yield 5](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/8be59b63-3f53-430c-b134-70f128108620)
+![yield 6](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/4a2eb036-0a9e-4948-9331-37a34ce8f241)
