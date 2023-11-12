@@ -97,6 +97,10 @@ Germany, Australia, and United Kingdom are top producing countries and they use 
 
 ![yield 4](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/e48fa59c-a80a-4a61-abd7-0c87eb26ce66)
 
- 
+
 ![yield 5](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/8be59b63-3f53-430c-b134-70f128108620)
-![yield 6](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/4a2eb036-0a9e-4948-9331-37a34ce8f241)
+![yield 6](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/4a2eb036-0a9e-4948-9331-37a34ce8f241) 
+
+Top pesticides used on items: Yams
+Least pesticides used on items: Plantains and others
+ ![rain t](https://github.com/Jonathan-libesa/Crop-Yield-Prediction/assets/75207695/62e5bf42-6685-444f-95be-32e693192c1b)
